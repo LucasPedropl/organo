@@ -5,7 +5,12 @@ import Botao from "../Botao";
 import { useState } from "react";
 
 const Formulario = (props) => {
-	
+
+	const [nome, setNome] = useState("");
+	const [cargo, setCargo] = useState("");
+	const [imagem, setImagem] = useState("");
+	const [time, setTime] = useState(props.times[0]);
+
 	const aoSalvar = (evento) => {
 		evento.preventDefault();
 		props.aoColaboradorCadastrado({
@@ -14,18 +19,18 @@ const Formulario = (props) => {
 			imagem,
 			time,
 		});
+		setNome("");
+		setCargo("");
+		setImagem("");
 	};
 
-	const [nome, setNome] = useState("");
-	const [cargo, setCargo] = useState("");
-	const [imagem, setImagem] = useState("");
-	const [time, setTime] = useState("");
+	
 
 	return (
 		<section className="formulario">
 			<form onSubmit={aoSalvar}>
 				<h2>Preencha os dados para criar o card do colaborador</h2>
-				<br/>
+				<br />
 				<CampoTexto
 					valor={nome}
 					aoAlterado={(valor) => setNome(valor)}

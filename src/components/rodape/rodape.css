@@ -1,0 +1,24 @@
+.rodape{
+    background-color: #6278f7;
+    text-align: center;
+    color: white;
+    margin-bottom: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 30px;
+}
+
+.rodape img {
+    max-width: 50%;
+}
+
+.redes img{
+    padding-left: 30px;
+}
+
+.redes{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
