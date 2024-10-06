@@ -19,6 +19,9 @@
     border-radius: 0px 0px 10px 10px;
     padding-top: 90px;
     padding-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .colaborador .rodape h4 {
@@ -27,6 +30,7 @@
     line-height: 22px;
     font-weight: bold;
     margin-bottom: 8px;
+
 }
 
 .colaborador .rodape h5 {
